@@ -1,0 +1,299 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>mobile.japancv.jcvfacesdk</title>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
+<link href="../../images/jcv-logo.png">
+<link href="../../styles/logo-styles.css" rel="Stylesheet"></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../index.html">
+                            JcvFaceSdk
+                    </a>            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":jcv-face-core:dokkaHtmlPartial/androidMain">android</button>
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":jcv-face-core:dokkaHtmlPartial/commonMain">common</button>
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":jcv-face-core:dokkaHtmlPartial/iosMain">ios</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="package" id="content" pageids="jcv-face-core::mobile.japancv.jcvfacesdk////PointingToDeclaration//2109110352">
+  <div class="breadcrumbs"><a href="../index.html">jcv-face-core</a><span class="delimiter">/</span><span class="current">mobile.japancv.jcvfacesdk</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="1757392957%2FClasslikes%2F-1686206796" anchor-label="AndroidPlatform" id="1757392957%2FClasslikes%2F-1686206796" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/androidMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-android-platform/index.html"><span>Android</span><wbr><span><span>Platform</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1757392957%2FClasslikes%2F-1686206796"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/androidMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":jcv-face-core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-android-platform/index.html">AndroidPlatform</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>context<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span> : <a href="-platform/index.html">Platform</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2125880220%2FClasslikes%2F2109110352" anchor-label="Core" id="-2125880220%2FClasslikes%2F2109110352" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain,:jcv-face-core:dokkaHtmlPartial/androidMain,:jcv-face-core:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain,:jcv-face-core:dokkaHtmlPartial/androidMain,:jcv-face-core:dokkaHtmlPartial/iosMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain,:jcv-face-core:dokkaHtmlPartial/androidMain,:jcv-face-core:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-core/index.html"><span><span>Core</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2125880220%2FClasslikes%2F2109110352"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/androidMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":jcv-face-core:dokkaHtmlPartial/androidMain">android</button><button class="platform-bookmark" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain" data-toggle=":jcv-face-core:dokkaHtmlPartial/commonMain">common</button><button class="platform-bookmark" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/iosMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/iosMain" data-toggle=":jcv-face-core:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-togglable=":jcv-face-core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">class </span><a href="-core/index.html">Core</a></div><div class="brief "><p class="paragraph">SDK Core. This is the entry point of JCV Face SDK. It holds common configuration and the state of SDK APIs. Most applications don't need to interact with this class.</p></div></div><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">class </span><a href="-core/index.html">Core</a></div><div class="brief "><p class="paragraph">SDK Core. This is the entry point of JCV Face SDK. It holds common configuration and the state of SDK APIs. Most applications don't need to interact with this class.</p></div></div><div class="content sourceset-dependent-content" data-togglable=":jcv-face-core:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">class </span><a href="-core/index.html">Core</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1204991139%2FClasslikes%2F-1074629018" anchor-label="DualImageAgent" id="-1204991139%2FClasslikes%2F-1074629018" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-dual-image-agent/index.html"><span>Dual</span><wbr><span>Image</span><wbr><span><span>Agent</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1204991139%2FClasslikes%2F-1074629018"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-dual-image-agent/index.html">DualImageAgent</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>firstImageAgent<span class="token operator">: </span><a href="-image-agent/index.html">ImageAgent</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>secondImageAgent<span class="token operator">: </span><a href="-image-agent/index.html">ImageAgent</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">The DualImageAgent is represented for two <a href="-image-agent/index.html">ImageAgent</a>s may be used for the scenario of binocular Face Liveness detection</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="376518265%2FClasslikes%2F-1074629018" anchor-label="ImageAgent" id="376518265%2FClasslikes%2F-1074629018" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-image-agent/index.html"><span>Image</span><wbr><span><span>Agent</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="376518265%2FClasslikes%2F-1074629018"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-image-agent/index.html">ImageAgent</a></div><div class="brief "><p class="paragraph">The ImageAgent interface serves as a versatile and comprehensive abstraction for interacting with images within the SDK. It defines a set of properties that an implementing class must support, providing a unified interface for various image-related operations.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1435122167%2FClasslikes%2F-1074629018" anchor-label="InternalFaceSdkApi" id="-1435122167%2FClasslikes%2F-1074629018" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-internal-face-sdk-api/index.html"><span>Internal</span><wbr><span>Face</span><wbr><span>Sdk</span><wbr><span><span>Api</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1435122167%2FClasslikes%2F-1074629018"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">annotation class </span><a href="-internal-face-sdk-api/index.html">InternalFaceSdkApi</a></div><div class="brief "><p class="paragraph">The InternalFaceSdkApi annotation class is designed to annotate classes or functions within the Face SDK that are intended for internal use only. This annotation serves as a marker to indicate that certain elements of the SDK are not intended for public consumption and may not provide the same level of stability or backward compatibility as the officially documented API.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-84863649%2FClasslikes%2F-1196975794" anchor-label="IOSPlatform" id="-84863649%2FClasslikes%2F-1196975794" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/iosMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-o-s-platform/index.html"><span><span>IOSPlatform</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-84863649%2FClasslikes%2F-1196975794"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/iosMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/iosMain" data-active="" data-toggle=":jcv-face-core:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-i-o-s-platform/index.html">IOSPlatform</a> : <a href="-platform/index.html">Platform</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1444480752%2FClasslikes%2F-1074629018" anchor-label="Platform" id="-1444480752%2FClasslikes%2F-1074629018" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-platform/index.html"><span><span>Platform</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1444480752%2FClasslikes%2F-1074629018"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-platform/index.html">Platform</a></div><div class="brief "><p class="paragraph">Platform context</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1212628907%2FClasslikes%2F2109110352" anchor-label="Scope" id="1212628907%2FClasslikes%2F2109110352" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain,:jcv-face-core:dokkaHtmlPartial/androidMain,:jcv-face-core:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain,:jcv-face-core:dokkaHtmlPartial/androidMain,:jcv-face-core:dokkaHtmlPartial/iosMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain,:jcv-face-core:dokkaHtmlPartial/androidMain,:jcv-face-core:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-scope/index.html"><span><span>Scope</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1212628907%2FClasslikes%2F2109110352"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/androidMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":jcv-face-core:dokkaHtmlPartial/androidMain">android</button><button class="platform-bookmark" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain" data-toggle=":jcv-face-core:dokkaHtmlPartial/commonMain">common</button><button class="platform-bookmark" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/iosMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/iosMain" data-toggle=":jcv-face-core:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-togglable=":jcv-face-core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-target/index.html"><span class="token annotation builtin">Target</span></a><span class="token punctuation">(</span><span>allowedTargets<span class="token operator"> = </span><span class="token punctuation">[</span><span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-annotation-target/-c-l-a-s-s/index.html">AnnotationTarget.CLASS</a></span><wbr><span class="token punctuation">]</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">actual </span><span class="token keyword">annotation class </span><a href="-scope/index.html">Scope</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>scope<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-target/index.html"><span class="token annotation builtin">Target</span></a><span class="token punctuation">(</span><span>allowedTargets<span class="token operator"> = </span><span class="token punctuation">[</span><span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.annotation/-annotation-target/-c-l-a-s-s/index.html">AnnotationTarget.CLASS</a></span><wbr><span class="token punctuation">]</span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">expect </span><span class="token keyword">annotation class </span><a href="-scope/index.html">Scope</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>scope<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Identifies scope annotations.</p></div></div><div class="content sourceset-dependent-content" data-togglable=":jcv-face-core:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">annotation class </span><a href="-scope/index.html">Scope</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>scope<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1689979744%2FClasslikes%2F2109110352" anchor-label="SdkComponent" id="-1689979744%2FClasslikes%2F2109110352" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain,:jcv-face-core:dokkaHtmlPartial/androidMain,:jcv-face-core:dokkaHtmlPartial/iosMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain,:jcv-face-core:dokkaHtmlPartial/androidMain,:jcv-face-core:dokkaHtmlPartial/iosMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain,:jcv-face-core:dokkaHtmlPartial/androidMain,:jcv-face-core:dokkaHtmlPartial/iosMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-sdk-component/index.html"><span>Sdk</span><wbr><span><span>Component</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1689979744%2FClasslikes%2F2109110352"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/androidMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":jcv-face-core:dokkaHtmlPartial/androidMain">android</button><button class="platform-bookmark" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain" data-toggle=":jcv-face-core:dokkaHtmlPartial/commonMain">common</button><button class="platform-bookmark" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/iosMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/iosMain" data-toggle=":jcv-face-core:dokkaHtmlPartial/iosMain">ios</button></div>
+<div class="content sourceset-dependent-content" data-togglable=":jcv-face-core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="-sdk-component/index.html">SdkComponent</a></div></div><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="-sdk-component/index.html">SdkComponent</a></div></div><div class="content sourceset-dependent-content" data-togglable=":jcv-face-core:dokkaHtmlPartial/iosMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="-sdk-component/index.html">SdkComponent</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1155831227%2FClasslikes%2F-1074629018" anchor-label="SdkModels" id="1155831227%2FClasslikes%2F-1074629018" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-sdk-models/index.html"><span>Sdk</span><wbr><span><span>Models</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1155831227%2FClasslikes%2F-1074629018"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-sdk-models/index.html">SdkModels</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>faceDetection<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>faceDetectionPriors<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>faceQuality<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>faceLiveness<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>faceBinocularLiveness<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>facePose<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>faceAge<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>faceGender<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>gesture<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-603343585%2FClasslikes%2F-1074629018" anchor-label="SdkOptions" id="-603343585%2FClasslikes%2F-1074629018" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-sdk-options/index.html"><span>Sdk</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-603343585%2FClasslikes%2F-1074629018"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-sdk-options/index.html">SdkOptions</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>projectId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>packageName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>apiKey<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>sdkModels<span class="token operator">: </span><a href="-sdk-models/index.html">SdkModels</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1620739799%2FClasslikes%2F-1074629018" anchor-label="SdkScope" id="-1620739799%2FClasslikes%2F-1074629018" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-sdk-scope/index.html"><span>Sdk</span><wbr><span><span>Scope</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1620739799%2FClasslikes%2F-1074629018"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-sdk-scope/index.html">SdkScope</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>scope<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="EXTENSION_FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-247625639%2FFunctions%2F-1686206796" anchor-label="toImageAgent" id="-247625639%2FFunctions%2F-1686206796" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/androidMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="to-image-agent.html"><span>to</span><wbr><span>Image</span><wbr><span><span>Agent</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-247625639%2FFunctions%2F-1686206796"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/androidMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":jcv-face-core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html">Bitmap</a><span class="token punctuation">.</span><a href="to-image-agent.html"><span class="token function">toImageAgent</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-image-agent/index.html">ImageAgent</a></div><div class="brief "><p class="paragraph">The util for converting <a href="https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html">Bitmap</a> to ImageAgent</p></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">.</span><a href="to-image-agent.html"><span class="token function">toImageAgent</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">format<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html">ImageFormat</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-image-agent/index.html">ImageAgent</a></div><div class="brief "><p class="paragraph">The util for converting <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a> to ImageAgent</p></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Japan Computer Vision Corp.</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,15 @@
+:root {
+    --dokka-logo-image-url: url('../images/jcv-logo.png');
+    --dokka-logo-height: 66px;
+    --dokka-logo-width: 125px;
+}
+
+/* link custom rules styles */
+
+/* logo custom rules styles */
+.library-name--link::before {
+    background-position: left;
+    background-size: 125px 66px;
+    width: 125px;
+    height: 66px;
+}

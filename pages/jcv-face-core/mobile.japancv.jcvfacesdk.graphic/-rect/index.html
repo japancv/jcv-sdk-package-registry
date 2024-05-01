@@ -1,0 +1,522 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Rect</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
+<link href="../../../images/jcv-logo.png">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet"></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            JcvFaceSdk
+                    </a>            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":jcv-face-core:dokkaHtmlPartial/androidMain">android</button>
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":jcv-face-core:dokkaHtmlPartial/commonMain">common</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="jcv-face-core::mobile.japancv.jcvfacesdk.graphic/Rect///PointingToDeclaration//-1074629018">
+  <div class="breadcrumbs"><a href="../../index.html">jcv-face-core</a><span class="delimiter">/</span><a href="../index.html">mobile.japancv.jcvfacesdk.graphic</a><span class="delimiter">/</span><span class="current">Rect</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Rect</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/Serializable///PointingToDeclaration/"><span class="token annotation builtin">Serializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">Rect</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>left<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>top<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>right<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>bottom<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span></div><p class="paragraph">Rect holds four integer coordinates for a rectangle. The rectangle is represented by the coordinates of its 4 edges (left, top, right bottom). These fields can be accessed directly. Use width() and height() to retrieve the rectangle's width and height. Note: most methods do not check to see that the coordinates are sorted correctly (i.e. left &lt;= right and top &lt;= bottom).</p><p class="paragraph">Create a new rectangle with the specified coordinates. Note: no range checking is performed, so the caller must ensure that left &lt;= right and top &lt;= bottom.</p><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>left</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The X coordinate of the left side of the rectangle</p></div></div></div></div><div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>top</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The Y coordinate of the top of the rectangle</p></div></div></div></div><div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>right</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The X coordinate of the right side of the rectangle</p></div></div></div></div><div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>bottom</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The Y coordinate of the bottom of the rectangle</p></div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION,EXTENSION_PROPERTY,EXTENSION_FUNCTION">Members &amp; Extensions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="1372074279%2FConstructors%2F-1074629018" anchor-label="Rect" id="1372074279%2FConstructors%2F-1074629018" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-rect.html"><span><span>Rect</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1372074279%2FConstructors%2F-1074629018"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">r<span class="token operator">: </span><a href="index.html">Rect</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Create a new rectangle, initialized with the values in the specified rectangle (which is left unmodified).</p></div><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">left<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">top<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">right<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">bottom<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-1313281157%2FClasslikes%2F-1074629018" anchor-label="Companion" id="-1313281157%2FClasslikes%2F-1074629018" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1313281157%2FClasslikes%2F-1074629018"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="1247622363%2FProperties%2F-1074629018" anchor-label="bottom" id="1247622363%2FProperties%2F-1074629018" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bottom.html"><span><span>bottom</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1247622363%2FProperties%2F-1074629018"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="bottom.html">bottom</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1210639599%2FProperties%2F-1074629018" anchor-label="isEmpty" id="-1210639599%2FProperties%2F-1074629018" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-empty.html"><span>is</span><wbr><span><span>Empty</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1210639599%2FProperties%2F-1074629018"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-empty.html">isEmpty</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1929126722%2FProperties%2F-1074629018" anchor-label="isValid" id="1929126722%2FProperties%2F-1074629018" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-valid.html"><span>is</span><wbr><span><span>Valid</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1929126722%2FProperties%2F-1074629018"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="is-valid.html">isValid</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2028641089%2FProperties%2F-1074629018" anchor-label="left" id="-2028641089%2FProperties%2F-1074629018" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="left.html"><span><span>left</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2028641089%2FProperties%2F-1074629018"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="left.html">left</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1524923624%2FProperties%2F-1074629018" anchor-label="right" id="-1524923624%2FProperties%2F-1074629018" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="right.html"><span><span>right</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1524923624%2FProperties%2F-1074629018"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="right.html">right</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="428472255%2FProperties%2F-1074629018" anchor-label="top" id="428472255%2FProperties%2F-1074629018" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="top.html"><span><span>top</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="428472255%2FProperties%2F-1074629018"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="top.html">top</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1775224143%2FFunctions%2F-1074629018" anchor-label="centerX" id="-1775224143%2FFunctions%2F-1074629018" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="center-x.html"><span>center</span><wbr><span><span>X</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1775224143%2FFunctions%2F-1074629018"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="center-x.html"><span class="token function">centerX</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1744204336%2FFunctions%2F-1074629018" anchor-label="centerY" id="-1744204336%2FFunctions%2F-1074629018" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="center-y.html"><span>center</span><wbr><span><span>Y</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1744204336%2FFunctions%2F-1074629018"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="center-y.html"><span class="token function">centerY</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="592328688%2FFunctions%2F-1074629018" anchor-label="contains" id="592328688%2FFunctions%2F-1074629018" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="contains.html"><span><span>contains</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="592328688%2FFunctions%2F-1074629018"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="contains.html"><span class="token function">contains</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">r<span class="token operator">: </span><a href="index.html">Rect</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Returns true iff the specified rectangle r is inside or equal to this rectangle. An empty rectangle never contains another rectangle.</p></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="contains.html"><span class="token function">contains</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">x<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">y<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Returns true if (x,y) is inside the rectangle. The left and top are considered to be inside, while the right and bottom are not. This means that for a x,y to be contained: left &lt;= x &lt; right and top &lt;= y &lt; bottom. An empty rectangle never contains any point.</p></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="contains.html"><span class="token function">contains</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">left<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">top<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">right<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">bottom<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Returns true iff the 4 specified sides of a rectangle are inside or equal to this rectangle. i.e. is this rectangle a superset of the specified rectangle. An empty rectangle never contains another rectangle.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-671873086%2FFunctions%2F-1074629018" anchor-label="exactCenterX" id="-671873086%2FFunctions%2F-1074629018" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="exact-center-x.html"><span>exact</span><wbr><span>Center</span><wbr><span><span>X</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-671873086%2FFunctions%2F-1074629018"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="exact-center-x.html"><span class="token function">exactCenterX</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-640853279%2FFunctions%2F-1074629018" anchor-label="exactCenterY" id="-640853279%2FFunctions%2F-1074629018" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="exact-center-y.html"><span>exact</span><wbr><span>Center</span><wbr><span><span>Y</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-640853279%2FFunctions%2F-1074629018"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="exact-center-y.html"><span class="token function">exactCenterY</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1002492255%2FFunctions%2F-1074629018" anchor-label="height" id="1002492255%2FFunctions%2F-1074629018" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="height.html"><span><span>height</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1002492255%2FFunctions%2F-1074629018"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="height.html"><span class="token function">height</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1942490296%2FFunctions%2F-1074629018" anchor-label="inset" id="-1942490296%2FFunctions%2F-1074629018" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="inset.html"><span><span>inset</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1942490296%2FFunctions%2F-1074629018"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="inset.html"><span class="token function">inset</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">insets<span class="token operator">: </span><a href="index.html">Rect</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Insets the rectangle on all sides specified by the dimensions of the <code class="lang-kotlin">insets</code> rectangle.</p></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="inset.html"><span class="token function">inset</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">dx<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">dy<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Inset the rectangle by (dx,dy). If dx is positive, then the sides are moved inwards, making the rectangle narrower. If dx is negative, then the sides are moved outwards, making the rectangle wider. The same holds true for dy and the top and bottom.</p></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="inset.html"><span class="token function">inset</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">left<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">top<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">right<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">bottom<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Insets the rectangle on all sides specified by the insets.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-967356320%2FFunctions%2F-1074629018" anchor-label="intersect" id="-967356320%2FFunctions%2F-1074629018" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="intersect.html"><span><span>intersect</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-967356320%2FFunctions%2F-1074629018"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="intersect.html"><span class="token function">intersect</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">r<span class="token operator">: </span><a href="index.html">Rect</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">If the specified rectangle intersects this rectangle, return true and set this rectangle to that intersection, otherwise return false and do not change this rectangle. No check is performed to see if either rectangle is empty. To just test for intersection, use intersects()</p></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="intersect.html"><span class="token function">intersect</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">left<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">top<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">right<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">bottom<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">If the rectangle specified by left,top,right,bottom intersects this rectangle, return true and set this rectangle to that intersection, otherwise return false and do not change this rectangle. No check is performed to see if either rectangle is empty. Note: To just test for intersection, use .intersects.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1402094355%2FFunctions%2F-1074629018" anchor-label="intersects" id="-1402094355%2FFunctions%2F-1074629018" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="intersects.html"><span><span>intersects</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1402094355%2FFunctions%2F-1074629018"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="intersects.html"><span class="token function">intersects</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">left<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">top<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">right<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">bottom<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Returns true if this rectangle intersects the specified rectangle. In no event is this rectangle modified. No check is performed to see if either rectangle is empty. To record the intersection, use intersect() or setIntersect().</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1249237920%2FFunctions%2F-1074629018" anchor-label="intersectUnchecked" id="1249237920%2FFunctions%2F-1074629018" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="intersect-unchecked.html"><span>intersect</span><wbr><span><span>Unchecked</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1249237920%2FFunctions%2F-1074629018"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="intersect-unchecked.html"><span class="token function">intersectUnchecked</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="index.html">Rect</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">If the specified rectangle intersects this rectangle, set this rectangle to that intersection, otherwise set this rectangle to the empty rectangle.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1730075500%2FFunctions%2F-1074629018" anchor-label="offset" id="1730075500%2FFunctions%2F-1074629018" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="offset.html"><span><span>offset</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1730075500%2FFunctions%2F-1074629018"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="offset.html"><span class="token function">offset</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">dx<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">dy<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Offset the rectangle by adding dx to its left and right coordinates, and adding dy to its top and bottom coordinates.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-336972729%2FFunctions%2F-1074629018" anchor-label="offsetTo" id="-336972729%2FFunctions%2F-1074629018" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="offset-to.html"><span>offset</span><wbr><span><span>To</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-336972729%2FFunctions%2F-1074629018"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="offset-to.html"><span class="token function">offsetTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">newLeft<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">newTop<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Offset the rectangle to a specific (left, top) position, keeping its width and height the same.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="158251579%2FFunctions%2F-1074629018" anchor-label="scale" id="158251579%2FFunctions%2F-1074629018" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="scale.html"><span><span>scale</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="158251579%2FFunctions%2F-1074629018"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="scale.html"><span class="token function">scale</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">scale<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Scales up the rect by the given scale.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-811222259%2FFunctions%2F-1074629018" anchor-label="set" id="-811222259%2FFunctions%2F-1074629018" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set.html"><span><span>set</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-811222259%2FFunctions%2F-1074629018"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="set.html"><span class="token function">set</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">left<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">top<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">right<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">bottom<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Set the rectangle's coordinates to the specified values. Note: no range checking is performed, so it is up to the caller to ensure that left &lt;= right and top &lt;= bottom.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2126377285%2FFunctions%2F-1074629018" anchor-label="setEmpty" id="-2126377285%2FFunctions%2F-1074629018" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-empty.html"><span>set</span><wbr><span><span>Empty</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2126377285%2FFunctions%2F-1074629018"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-empty.html"><span class="token function">setEmpty</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Set the rectangle to (0,0,0,0)</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2058558486%2FFunctions%2F-1074629018" anchor-label="setIntersect" id="2058558486%2FFunctions%2F-1074629018" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-intersect.html"><span>set</span><wbr><span><span>Intersect</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2058558486%2FFunctions%2F-1074629018"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-intersect.html"><span class="token function">setIntersect</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">a<span class="token operator">: </span><a href="index.html">Rect</a><span class="token punctuation">, </span></span><span class="parameter ">b<span class="token operator">: </span><a href="index.html">Rect</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">If rectangles a and b intersect, return true and set this rectangle to that intersection, otherwise return false and do not change this rectangle. No check is performed to see if either rectangle is empty. To just test for intersection, use intersects()</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1069828344%2FFunctions%2F-1074629018" anchor-label="sort" id="-1069828344%2FFunctions%2F-1074629018" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="sort.html"><span><span>sort</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1069828344%2FFunctions%2F-1074629018"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Swap top/bottom or left/right if there are flipped (i.e. left right and/or top bottom). This can be called if the edges are computed separately, and may have crossed over each other. If the edges are already correct (i.e. left &lt;= right and top &lt;= bottom) then nothing is done.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1355258953%2FFunctions%2F-1686206796" anchor-label="toAndroidRect" id="-1355258953%2FFunctions%2F-1686206796" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/androidMain"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/androidMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/androidMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../to-android-rect.html"><span>to</span><wbr><span>Android</span><wbr><span><span>Rect</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1355258953%2FFunctions%2F-1686206796"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                    <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/androidMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":jcv-face-core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">Rect</a><span class="token punctuation">.</span><a href="../to-android-rect.html"><span class="token function">toAndroidRect</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/Rect.html">Rect</a></div></div>                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-299051534%2FFunctions%2F-1074629018" anchor-label="union" id="-299051534%2FFunctions%2F-1074629018" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="union.html"><span><span>union</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-299051534%2FFunctions%2F-1074629018"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="union.html"><span class="token function">union</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">r<span class="token operator">: </span><a href="index.html">Rect</a></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="union.html"><span class="token function">union</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">left<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">top<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">right<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">bottom<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Update this Rect to enclose itself and the specified rectangle. If the specified rectangle is empty, nothing is done. If this rectangle is empty it is set to the specified rectangle.</p></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="union.html"><span class="token function">union</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">x<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">y<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Update this Rect to enclose itself and the x,y coordinate. There is no check to see that this rectangle is non-empty.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1873062574%2FFunctions%2F-1074629018" anchor-label="width" id="1873062574%2FFunctions%2F-1074629018" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain"></a>
+          <div class="table-row" data-filterable-current=":jcv-face-core:dokkaHtmlPartial/commonMain" data-filterable-set=":jcv-face-core:dokkaHtmlPartial/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="width.html"><span><span>width</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1873062574%2FFunctions%2F-1074629018"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":jcv-face-core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="width.html"><span class="token function">width</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Japan Computer Vision Corp.</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

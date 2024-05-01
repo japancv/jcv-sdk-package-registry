@@ -1,0 +1,23 @@
+{
+  "project_info": {
+    "project_id": "28a123df-74f8-40b6-ba55-fa64e3e690b5",
+    "key": "LS0tLS1CRUdJTiBSU0EgUFVCTElDIEtFWS0tLS0tCk1JSUJJakFOQmdrcWhraUc5dzBCQVFFRkFBT0NBUThBTUlJQkNnS0NBUUVBMFJmcFNVaXVHNjRQTjJaSThwYWYKKy9KaVlSVno0dWp5UitQMXl4QWFXSytBQWRpT1laMllvNGFiNVVFTUY3SVE4b240L0V2MDhBMjVOT2ZYOStKUApqWlhwUUl0YmlvM2svSzBJeWRKcGtoZ05TWnMxbWY2YzU0YVBjYzdpNWRhQ2ZGTTlWR3hLK2ZiNjdZanE3dTdiClBsWUZBdHZaYXRTb1FSU01TM3I2aUR6RGNtamNIZU9oMk9qSEEyYVpRL1cxaU9MWEdRbFQ1TVpyZ1lkc3NSZEIKVm1HdWtVcmhZM09vK3FJaGx0UnAxeVVidmxSTm1XSG5FVkJ3ejV3VmcvSkxBMHMrYlVmRzlyRitJYitaM2ZKcgo3RWYvTHRDdm5TcHV6enNWb2pSRjhqUENJdG53UHEwNDNKckN3UExkSlc2VEZGTmlkSmp1OGt3UzkyYmFLK2FMCjNRSURBUUFCCi0tLS0tRU5EIFJTQSBQVUJMSUMgS0VZLS0tLS0K",
+    "api_key": "e56f6878-2b54-4ac5-8497-3de685655383",
+    "package_name": "mobile.japancv.jcvfacesdk.sample"
+  },
+  "sdk": {
+    "configuration": {
+      "models": {
+        "face_age": "ageEstimation_v1_0130x1.mnn",
+        "face_binocular": "dual.fp16.mnn",
+        "face_detection": "jcvfdv6_0123x1.fp16.mnn",
+        "face_detection_priors": "priors106.txt",
+        "face_gender": "genderEstimation_v1_0303x1.mnn",
+        "face_liveness": "mobilenet_v3.fp16.mnn",
+        "face_pose": "PoseV1-1227x1.mnn",
+        "face_quality": "jcvQualv1_0116x1.mnn",
+        "gesture": "JCVGesture_0821.fp16.mnn"
+      }
+    }
+  }
+}

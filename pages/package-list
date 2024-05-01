@@ -1,0 +1,26 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:mobile.japancv.jcvfacesdk.internal.mnn////PointingToDeclaration/jcv-face-core/mobile.japancv.jcvfacesdk.internal.mnn.html
+$dokka.location:mobile.japancv.jcvfacesdk.internal////PointingToDeclaration/jcv-face-core/mobile.japancv.jcvfacesdk.internal.html
+module:jcv-face-attributes
+mobile.japancv.sdk.fa
+module:jcv-face-core
+mobile.japancv.jcvfacesdk
+mobile.japancv.jcvfacesdk.exception
+mobile.japancv.jcvfacesdk.graphic
+mobile.japancv.jcvfacesdk.image
+mobile.japancv.jcvfacesdk.internal
+mobile.japancv.jcvfacesdk.internal.mnn
+mobile.japancv.jcvfacesdk.model
+mobile.japancv.jcvfacesdk.provider
+mobile.japancv.jcvfacesdk.util
+module:jcv-face-detection
+mobile.japancv.sdk.fd
+module:jcv-face-liveness
+mobile.japancv.sdk.fl
+module:jcv-face-pose
+mobile.japancv.sdk.fp
+module:jcv-face-quality
+mobile.japancv.sdk.fq
+module:jcv-gesture-detection
+mobile.japancv.sdk.gd
