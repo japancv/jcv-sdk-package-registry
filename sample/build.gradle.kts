@@ -1,7 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("jp.co.japancv.plugin-sdk-config") version "1.2.1"
+    id("jp.co.japancv.plugin-sdk-config") version "1.2.2"
 }
 
 android {
@@ -36,29 +36,11 @@ android {
     }
 }
 
-//repositories {
-//    val repoRegistryUrl = getProperty("githubPackageUrl") ?: System.getProperty("githubPackageUrl")
-//    val repoUsername = getProperty("githubUsername") ?: System.getProperty("githubUsername")
-//    val repoPassword = getProperty("githubPrivateToken") ?: System.getProperty("githubPrivateToken")
-//
-//    maven {
-//        url = uri(repoRegistryUrl)
-//        name = "Github"
-//        credentials {
-//            username = repoUsername
-//            password = repoPassword
-//        }
-//        authentication {
-//            create("basic", BasicAuthentication::class)
-//        }
-//    }
-//}
-
 dependencies {
-    implementation("jp.co.japancv:sdk-face-detection:3.0.0-rc.2")
-    implementation("jp.co.japancv:sdk-face-attributes:3.0.0-rc.2")
-    implementation("jp.co.japancv:sdk-face-liveness:3.0.0-rc.2")
-    implementation("jp.co.japancv:sdk-face-pose:3.0.0-rc.2")
+    implementation("jp.co.japancv:sdk-face-detection:3.0.0-rc.4")
+    implementation("jp.co.japancv:sdk-face-attributes:3.0.0-rc.4")
+    implementation("jp.co.japancv:sdk-face-liveness:3.0.0-rc.4")
+    implementation("jp.co.japancv:sdk-face-pose:3.0.0-rc.4")
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")

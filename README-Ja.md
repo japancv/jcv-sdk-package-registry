@@ -1,16 +1,16 @@
-# JCV Face SDK Sample
+# JCV Face SDK サンプル
 
 [English](README.md) | [日本語](README-Ja.md)
 
-## Available JCV SDK libraries
+## 利用可能なJCV SDKライブラリ
 
-The following libraries and plugin are available for the various JCV SDK functions.
+JCV SDK の各種機能については、以下のライブラリやプラグインが利用可能です。
 
-| Gradle Plugin	                                    | Gradle Dependency                                                                                                         |
+| Gradle プラグイン	                                    | Gradle 依存                                                                                                         |
 |---------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------|
 | SDK Config | [`plugin-build:jp.co.japancv.plugin-sdk-config:1.2.2`](https://github.com/japancv/jcv-sdk-package-registry/packages/2137930)     |
 
-| Libraries	                                                 | Gradle Dependency                                                                                                         |
+| ライブラリ	                                                 | Gradle 依存                                                                                                         |
 |---------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------|
 | [Face Detection](https://japancv.github.io/jcv-sdk-package-registry/jcv-face-detection/index.html)       | [`jp.co.japancv:sdk-face-detection:3.0.0-rc.4`](https://github.com/japancv/jcv-sdk-package-registry/packages/2138758)     |
 | [Face Attributes](https://japancv.github.io/jcv-sdk-package-registry/jcv-face-attributes/index.html)  | [`jp.co.japancv:sdk-face-attributes:3.0.0-rc.4`](https://github.com/japancv/jcv-sdk-package-registry/packages/2138754)    |
@@ -19,32 +19,33 @@ The following libraries and plugin are available for the various JCV SDK functio
 | [Face Pose](https://japancv.github.io/jcv-sdk-package-registry/jcv-face-pose/index.html) | [`jp.co.japancv:sdk-face-pose:3.0.0-rc.4`](https://github.com/japancv/jcv-sdk-package-registry/packages/2138762)          |
 | [Gesture Detection](https://japancv.github.io/jcv-sdk-package-registry/jcv-gesture-detection/index.html) | [`jp.co.japancv:sdk-gesture-detection:3.0.0-rc.4`](https://github.com/japancv/jcv-sdk-package-registry/packages/2138766)  |
 
-## 📦 Add JCV SDK to your project
 
-### Prerequisites
+## 📦 JCV SDKをプロジェクトに追加方法
 
-- The minimum Android SDK Version: 34
+### 必要な事項
 
-### Add SDK
+- Android SDKの最小バージョン: 34
 
-1. Configuration file
+### SDKを追加
 
-Please download the SDK configuration file `jcv-sdk.json` and put on your project root.
+1. 設定ファイル
 
-2. Apply Gradle Plugin
+SDK設定ファイル `jcv-sdk.json` をダウンロードして、プロジェクトルートに置いてください。
 
-##### If using `plugins` block
+2. Gradleプラグインを適用する
 
-In the application level `build.gradle` file
+##### `plugins` blockを使用する場合
+
+アプリケーションレベル `build.gradle` ファイル
 ```groovy
 plugins {
   id 'jp.co.japancv.plugin-sdk-config' version '1.2.2'
 }
 ```
 
-##### [Legacy way] If using `buildscript` block
+##### [古い方法] `buildscript` blockを使用する場合
 
-In the project level `build.gradle` file
+プロジェクトレベル `build.gradle` ファイル
 ```groovy
 buildscript {
 //  ...
@@ -54,7 +55,7 @@ buildscript {
 }
 ```
 
-In the application level `build.gradle` file
+アプリケーションレベル `build.gradle` ファイル
 ```groovy
 plugins {
   id 'jp.co.japancv.plugin-sdk-config'
@@ -62,7 +63,7 @@ plugins {
 ```
 
 
-3. Install JCV Face SDK by adding the following dependency to your `build.gradle` file:
+3. 次の依存関係を `build.gradle` ファイルに追加して、JCV Face SDK をインストールします
 
 ```groovy
 repositories {
@@ -82,7 +83,7 @@ dependencies {
 }
 ```
 
-#### Add Maven Repository
+#### Maven Repositoryを追加
 
 You will need to add a maven repository where can fetch for the plugin and SDK
 
@@ -103,14 +104,14 @@ repositories {
 }
 ```
 
-Suggest to add in `settings.gradle` file for both `pluginManagement` and `dependencyResolutionManagement`
+`settings.gradle`ファイルに `pluginManagement` と `dependencyResolutionManagement` の両方を追加することにおすすめです。
 
-## ⚡️ Getting Started
+## ⚡️ はじめに
 
 ```kotlin
 
 /**
- * How to use JCV SDK
+ * 基本のJCV SDKの使い方
  */
 scope.launch {
     // 1. Get the Face Detection instance
@@ -128,7 +129,8 @@ scope.launch {
 }
 ```
 
-## 📄  Reference document
+## 📄  API参考ドキュメント
 
-Please refer the following link:
+以下のリンクをご参照ください：
 https://japancv.github.io/jcv-sdk-package-registry/
+(現時点英語資料のみです)
