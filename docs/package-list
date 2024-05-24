@@ -1,6 +1,5 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
-$dokka.location:mobile.japancv.jcvfacesdk.internal.mnn////PointingToDeclaration/jcv-face-core/mobile.japancv.jcvfacesdk.internal.mnn.html
 $dokka.location:mobile.japancv.jcvfacesdk.internal////PointingToDeclaration/jcv-face-core/mobile.japancv.jcvfacesdk.internal.html
 module:jcv-face-attributes
 mobile.japancv.sdk.fa
