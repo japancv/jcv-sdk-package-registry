@@ -6,18 +6,18 @@
 
 The following libraries and plugin are available for the various JCV SDK functions.
 
-| Gradle Plugin	                                    | Gradle Dependency                                                                                                         |
-|---------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------|
-| SDK Config | [`plugin-build:jp.co.japancv.plugin-sdk-config:1.2.2`](https://github.com/japancv/jcv-sdk-package-registry/packages/2137930)     |
+| Gradle Plugin	                                    | Gradle Dependency                                                                                                            |
+|---------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------|
+| SDK Config | [`plugin-build:jp.co.japancv.plugin-sdk-config:1.2.3`](https://github.com/japancv/jcv-sdk-package-registry/packages/2137930) |
 
 | Libraries	                                                 | Gradle Dependency                                                                                                         |
 |---------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------|
-| [Face Detection](https://japancv.github.io/jcv-sdk-package-registry/jcv-face-detection/index.html)       | [`jp.co.japancv:sdk-face-detection:3.0.0-rc.5`](https://github.com/japancv/jcv-sdk-package-registry/packages/2138758)     |
-| [Face Attributes](https://japancv.github.io/jcv-sdk-package-registry/jcv-face-attributes/index.html)  | [`jp.co.japancv:sdk-face-attributes:3.0.0-rc.5`](https://github.com/japancv/jcv-sdk-package-registry/packages/2138754)    |
-| [Face Quality](https://japancv.github.io/jcv-sdk-package-registry/jcv-face-quality/index.html)    | [`jp.co.japancv:sdk-face-quality:3.0.0-rc.5`](https://github.com/japancv/jcv-sdk-package-registry/packages/2138764)       |
-| [Face Liveness](https://japancv.github.io/jcv-sdk-package-registry/jcv-face-liveness/index.html)   | [`jp.co.japancv:sdk-face-liveness:3.0.0-rc.5`](https://github.com/japancv/jcv-sdk-package-registry/packages/2138760)      |
-| [Face Pose](https://japancv.github.io/jcv-sdk-package-registry/jcv-face-pose/index.html) | [`jp.co.japancv:sdk-face-pose:3.0.0-rc.5`](https://github.com/japancv/jcv-sdk-package-registry/packages/2138762)          |
-| [Gesture Detection](https://japancv.github.io/jcv-sdk-package-registry/jcv-gesture-detection/index.html) | [`jp.co.japancv:sdk-gesture-detection:3.0.0-rc.5`](https://github.com/japancv/jcv-sdk-package-registry/packages/2138766)  |
+| [Face Detection](https://japancv.github.io/jcv-sdk-package-registry/jcv-face-detection/index.html)       | [`jp.co.japancv:sdk-face-detection:3.0.0`](https://github.com/japancv/jcv-sdk-package-registry/packages/2138758)     |
+| [Face Attributes](https://japancv.github.io/jcv-sdk-package-registry/jcv-face-attributes/index.html)  | [`jp.co.japancv:sdk-face-attributes:3.0.0`](https://github.com/japancv/jcv-sdk-package-registry/packages/2138754)    |
+| [Face Quality](https://japancv.github.io/jcv-sdk-package-registry/jcv-face-quality/index.html)    | [`jp.co.japancv:sdk-face-quality:3.0.0`](https://github.com/japancv/jcv-sdk-package-registry/packages/2138764)       |
+| [Face Liveness](https://japancv.github.io/jcv-sdk-package-registry/jcv-face-liveness/index.html)   | [`jp.co.japancv:sdk-face-liveness:3.0.0`](https://github.com/japancv/jcv-sdk-package-registry/packages/2138760)      |
+| [Face Pose](https://japancv.github.io/jcv-sdk-package-registry/jcv-face-pose/index.html) | [`jp.co.japancv:sdk-face-pose:3.0.0`](https://github.com/japancv/jcv-sdk-package-registry/packages/2138762)          |
+| [Gesture Detection](https://japancv.github.io/jcv-sdk-package-registry/jcv-gesture-detection/index.html) | [`jp.co.japancv:sdk-gesture-detection:3.0.0`](https://github.com/japancv/jcv-sdk-package-registry/packages/2138766)  |
 
 ## 📦 Add JCV SDK to your project
 
@@ -45,7 +45,7 @@ Please download the SDK configuration file `jcv-sdk.json` and put on your projec
 In the application level `build.gradle` file
 ```groovy
 plugins {
-  id 'jp.co.japancv.plugin-sdk-config' version '1.2.2'
+  id 'jp.co.japancv.plugin-sdk-config' version '1.2.3'
 }
 ```
 
@@ -56,7 +56,7 @@ In the project level `build.gradle` file
 buildscript {
 //  ...
   dependencies {
-    classpath("plugin-build:jp.co.japancv.plugin-sdk-config:1.2.2")
+    classpath("plugin-build:jp.co.japancv.plugin-sdk-config:1.2.3")
   }
 }
 ```
@@ -77,15 +77,15 @@ repositories {
 }
 
 dependencies {
-    implementation "jp.co.japancv:sdk-face-detection:3.0.0-rc.5"
+    implementation "jp.co.japancv:sdk-face-detection:3.0.0"
     
     // オプション
-    // implementation "jp.co.japancv:sdk-face-detection:3.0.0-rc.5"
-    // implementation "jp.co.japancv:sdk-face-attributes:3.0.0-rc.5"
-    // implementation "jp.co.japancv:sdk-face-liveness:3.0.0-rc.5"
-    // implementation "jp.co.japancv:sdk-face-pose:3.0.0-rc.5"
-    // implementation "jp.co.japancv:sdk-face-quality:3.0.0-rc.5"
-    // implementation "jp.co.japancv:sdk-gesture-detection:3.0.0-rc.5"
+    // implementation "jp.co.japancv:sdk-face-detection:3.0.0"
+    // implementation "jp.co.japancv:sdk-face-attributes:3.0.0"
+    // implementation "jp.co.japancv:sdk-face-liveness:3.0.0"
+    // implementation "jp.co.japancv:sdk-face-pose:3.0.0"
+    // implementation "jp.co.japancv:sdk-face-quality:3.0.0"
+    // implementation "jp.co.japancv:sdk-gesture-detection:3.0.0"
 }
 ```
 

@@ -1,7 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("jp.co.japancv.plugin-sdk-config") version "1.2.2"
+    id("jp.co.japancv.plugin-sdk-config") version "1.2.3"
 }
 
 android {
@@ -37,10 +37,10 @@ android {
 }
 
 dependencies {
-    implementation("jp.co.japancv:sdk-face-detection:3.0.0-rc.5")
-    implementation("jp.co.japancv:sdk-face-attributes:3.0.0-rc.5")
-    implementation("jp.co.japancv:sdk-face-liveness:3.0.0-rc.5")
-    implementation("jp.co.japancv:sdk-face-pose:3.0.0-rc.5")
+    implementation("jp.co.japancv:sdk-face-detection:3.0.0")
+    implementation("jp.co.japancv:sdk-face-attributes:3.0.0")
+    implementation("jp.co.japancv:sdk-face-liveness:3.0.0")
+    implementation("jp.co.japancv:sdk-face-pose:3.0.0")
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
@@ -48,9 +48,4 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-}
-
-jcvSdk {
-    disableServerCheck = false
-    verifyServerEndpoint = "https://license-dev.japancv.org/api/v1/verify"
 }

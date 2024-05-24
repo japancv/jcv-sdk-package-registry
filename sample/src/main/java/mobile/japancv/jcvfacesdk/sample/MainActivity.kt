@@ -11,7 +11,6 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 import mobile.japancv.jcvfacesdk.DualImageAgent
-import mobile.japancv.jcvfacesdk.InternalFaceSdkApi
 import mobile.japancv.jcvfacesdk.internal.BitmapImageImpl
 import mobile.japancv.jcvfacesdk.model.FaceInfo
 import mobile.japancv.jcvfacesdk.toImageAgent
@@ -20,7 +19,6 @@ import mobile.japancv.sdk.fd.FaceDetection
 import mobile.japancv.sdk.fl.FaceLiveness
 import mobile.japancv.sdk.fp.FacePose
 
-@OptIn(InternalFaceSdkApi::class)
 class MainActivity : AppCompatActivity() {
     private val scope = CoroutineScope(Job() + Dispatchers.Main)
 
