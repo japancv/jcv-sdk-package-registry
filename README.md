@@ -79,7 +79,7 @@ repositories {
 dependencies {
     implementation "jp.co.japancv:sdk-face-detection:3.0.0"
     
-    // オプション
+    // Optional libraries:
     // implementation "jp.co.japancv:sdk-face-detection:3.0.0"
     // implementation "jp.co.japancv:sdk-face-attributes:3.0.0"
     // implementation "jp.co.japancv:sdk-face-liveness:3.0.0"
