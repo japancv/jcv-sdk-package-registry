@@ -54,8 +54,9 @@ class MainActivity : AppCompatActivity() {
         scope.launch {
             showDemoFaceDetection(
                 fd = FaceDetection.getInstance {
-                    faceMinWidth = 100
-                    faceMinHeight = 100
+                    // Options for Face Detection
+                    // faceMinWidth = 100
+                    // faceMinHeight = 100
                 },
                 fa = FaceAttributes.getInstance(),
                 fp = FacePose.getInstance(),
