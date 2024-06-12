@@ -24,19 +24,12 @@ The following libraries and plugin are available for the various JCV SDK functio
 ### Prerequisites
 
 - The minimum Android SDK Version: 34
-- In Android project, you need to enable `buildConfig` feature,
-```groovy
-buildFeatures {
-    buildConfig true
-    ...
-}
-```
 
 ### Add SDK
 
 1. Configuration file
 
-Please download the SDK configuration file `jcv-sdk.json` and put on your project root.
+Please download the SDK configuration file `jcv-sdk.json` from JCV Cloud and put on your project root.
 
 2. Apply Gradle Plugin
 
@@ -99,13 +92,6 @@ repositories {
   maven {
     url = uri("https://maven.pkg.github.com/japancv/jcv-sdk-package-registry")
     name = "JCV SDK Github"
-    credentials {
-      username = "YOUR GITHUB USERNAME"
-      password = "YOUR GITHUB ACCESS TOKEN"
-    }
-    authentication {
-      create("basic", BasicAuthentication::class)
-    }
   }
 }
 ```
