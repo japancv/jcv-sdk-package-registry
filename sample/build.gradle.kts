@@ -37,10 +37,10 @@ android {
 }
 
 dependencies {
-    implementation("jp.co.japancv:sdk-face-detection:3.0.0")
-    implementation("jp.co.japancv:sdk-face-attributes:3.0.0")
-    implementation("jp.co.japancv:sdk-face-liveness:3.0.0")
-    implementation("jp.co.japancv:sdk-face-pose:3.0.0")
+    implementation("jp.co.japancv:sdk-face-detection:3.1.0")
+    implementation("jp.co.japancv:sdk-face-attributes:3.1.0")
+    implementation("jp.co.japancv:sdk-face-liveness:3.1.0")
+    implementation("jp.co.japancv:sdk-face-pose:3.1.0")
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
